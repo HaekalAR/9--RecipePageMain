@@ -1,0 +1,235 @@
+/* Google Font : Young Serif - 400 */
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+/* Google Font : Outfit - 400, 600, 700 */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  /* Primary Color */
+
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+
+  /* Neutral Color */
+
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================ Styling ul li inside ================ */
+
+ul li {
+  list-style-position: inside;
+}
+
+ol li {
+  list-style-position: inside;
+}
+
+/* ================= Hiding the scrollbar boo =================== */
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* ================= Why r  u hiding me nooo =================== */
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--eggshell);
+}
+
+.outer-box {
+  width: 38em;
+  background-color: var(--white);
+  padding: 1.5em;
+  margin: 2em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.image img {
+  border-radius: 6px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.super-heading h1 {
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: var(--dark-charcoal);
+}
+
+.super-heading p {
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--wenge-brown);
+}
+
+/* === Preparration Section === */
+
+.preparation {
+  background-color: var(--rose-white);
+  padding: 1em;
+  border-radius: 7px;
+}
+
+.preparation h4 {
+  padding-bottom: 0.5em;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  color: var(--dark-raspberry);
+}
+
+.preparation ul {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--wenge-brown);
+}
+
+.preparation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45em;
+}
+
+.preparation ul li span {
+  font-weight: 700;
+  color: var(--wenge-brown);
+}
+
+/* === Ingredients === */
+
+.ingredients {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.ingredients h2 {
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  color: var(--nutmeg);
+}
+
+.ingredients ul {
+  font-size: 14px;
+  color: var(--wenge-brown);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+/* === Instruction === */
+
+.instruction {
+  font-family: "Outfit", sans-serif;
+  color: var(--dark-charcoal);
+  margin-bottom: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.instruction h2 {
+  font-family: "Young serif", sans-serif;
+  color: var(--nutmeg);
+  font-weight: 400;
+}
+
+.instruction ol {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.instruction ol li {
+  list-style-position: outside;
+  list-style: var(--dark-raspberry);
+}
+
+.instruction ol li .padding-list {
+  padding-left: 1em;
+}
+
+.instruction ol {
+  padding-left: 1em;
+  color: var(--wenge-brown);
+}
+
+.instruction ol li span {
+  font-weight: 700;
+  color: var(--wenge-brown);
+}
+
+/* === Nutrition === */
+
+.nutrition {
+  width: 100%;
+}
+
+.nutrition h2 {
+  padding-bottom: 0.5em;
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  color: var(--nutmeg);
+}
+
+.nutrition p {
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--wenge-brown);
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 0.75em;
+  margin-bottom: 1em;
+}
+
+tr td {
+  border-bottom: 1px solid gray;
+  padding: 0.75em;
+}
+
+tr td:nth-child(1) {
+  padding-left: 2em;
+  font-family: "Outfit", sans-serif;
+  color: var(--wenge-brown);
+}
+
+tr td:nth-child(2) {
+  padding-left: 0;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  color: var(--dark-raspberry);
+}
